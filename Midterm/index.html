@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DJ Clicking Game</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="set">
+			<div id="beginAndStop">
+				<button type="button" onclick="beginGame()">START</button>
+				<button type="button" onclick="stopGame()">END</button>
+				<hr/>
+			</div>
+
+			<div id="ranges">
+				<div id="speed" name="ranges">
+					<label>Adjust Fall Speed</label><br>
+					<input type="range" name="speedRange" id="speedRange" onchange="speed(value)"/>
+				</div>
+
+            <p>SLOW&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;FAST</p>
+
+				<hr >
+
+				<div id="num" name="ranges">
+					<label>Adjust Object Quantity</label><br>
+					<input type="range" name="numRange" id="numRange" value="40" onchange="num(value)" step="20"/>
+				</div>
+
+            <p>LESS&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MORE</p>
+				<hr >
+
+			</div>
+
+			<div id="hit">
+				<label>Total Hits</label><br>
+				<label id="hitNum">0</label>
+			</div>
+		</div>
+
+<div class="object" id="div1" onclick="shoot(id)"></div>
+<div class="object" id="div2" onclick="shoot(id)"></div>
+<div class="object" id="div3" onclick="shoot(id)"></div>
+<div class="object" id="div4" onclick="shoot(id)"></div>
+<div class="object" id="div5" onclick="shoot(id)"></div>
+<div class="object" id="div6" onclick="shoot(id)"></div>
+
+		<script type="text/javascript" src="js/action.js"></script>
+	</body>
+</html>
